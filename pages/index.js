@@ -1,11 +1,16 @@
-import Footer from '../components/footer/Footer'
-import { Navbar } from '../components/navbar/Navbar'
-import styles from '../styles/Home.module.css'
+import Layout  from "../components/Layout"
 
 export default function Home() {
   return (
     <div>
-      <Navbar/>
     </div>
+  )
+}
+
+Home.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+        <>{page}</>
+    </Layout>
   )
 }
