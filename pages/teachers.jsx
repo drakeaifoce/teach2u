@@ -1,8 +1,11 @@
 import Layout from "../components/Layout";
+import { TeacherList } from "../components/teachers";
 
 export default function Teachers() {
   return (
-    <div>teachers</div>
+    <>
+      <TeacherList />
+    </>
   )
 }
 
