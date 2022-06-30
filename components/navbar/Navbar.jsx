@@ -1,9 +1,7 @@
 import Link from "next/link";
-import { useState } from "react";
 import { AuthForm } from "../modal/AuthForm";
 
 export function Navbar() {
-    const [formVisible, setFormVisible] = useState(false)
 
   return (
     <>
@@ -36,13 +34,17 @@ export function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <a>
-                            Поддержка
-                        </a>
+                        <Link href="/support">
+                            <a>
+                                Поддержка
+                            </a>
+                        </Link>
                     </li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Teach2U</a>
+                <Link href="/">
+                    <a className="btn btn-ghost normal-case text-xl">Teach2U</a>
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
@@ -68,9 +70,11 @@ export function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <a>
-                            Поддержка
-                        </a>
+                        <Link href="/support">
+                            <a>
+                                Поддержка
+                            </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
@@ -78,7 +82,7 @@ export function Navbar() {
                 <label for="my-modal-4" class="btn btn-primary modal-button">Войти</label>
             </div>
         </nav>
-        <AuthForm/>
+        <AuthForm />
     </>
   )
 }
