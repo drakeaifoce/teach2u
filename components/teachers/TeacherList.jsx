@@ -1,4 +1,4 @@
-import { TeacherCard } from "./TeacherCard"
+import { TeacherItem } from "./TeacherItem"
 
 export function TeacherList() {
     const data = [{
@@ -18,7 +18,7 @@ export function TeacherList() {
 return (
   <div className="grid grid-cols-3 gap-12 my-12">
       {data?.map((teacher) => (
-          <TeacherCard key={teacher.id} subject={teacher}/>
+          <TeacherItem key={teacher.id} teacher={teacher}/>
       ))}
   </div>
   )

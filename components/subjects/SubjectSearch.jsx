@@ -1,3 +1,4 @@
+import { useDebounce } from "../../hooks"
 
 export function SubjectSearch() {
   return (

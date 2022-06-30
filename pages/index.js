@@ -32,13 +32,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <ul class="steps steps-vertical lg:steps-horizontal text-xl">
-        <li class="step step-primary">Создайте аккаунт</li>
-        <li class="step step-primary">Выберите предметы для изучения</li>
-        <li class="step">Выберите подходящего преподавателя</li>
-        <li class="step">Подберите удобную дату и время</li>
-        <li class="step">Напишшите пожелания к уроку</li>
-        <li class="step">Переходите по ссылке на урок</li>
+      <ul className="steps steps-vertical lg:steps-horizontal text-xl py-36">
+        <li className="step step-primary">Создайте аккаунт</li>
+        <li className="step step-primary">Выберите предметы для изучения</li>
+        <li className="step">Выберите подходящего преподавателя</li>
+        <li className="step">Подберите удобную дату и время</li>
+        <li className="step">Напишшите пожелания к уроку</li>
+        <li className="step">Переходите по ссылке на урок</li>
       </ul>
     </>
   )
